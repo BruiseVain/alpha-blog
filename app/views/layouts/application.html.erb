@@ -10,9 +10,8 @@
   </head>
 
   <body>
-  <% flash.each do |name, msg| %>
-    <%= msg %>
-  <% end %>
+  <!--Under her rendrer vi en partial. Trenger ikke å skrive _ etter layouts/ -->
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
